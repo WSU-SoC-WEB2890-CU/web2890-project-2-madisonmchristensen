@@ -51,86 +51,56 @@
     </nav>
   </header>
 
-  <!-- JUMBOTRON -->
-  <section id="jumbo">
-    <div id="jumbo" class="jumbotron">
-      <h1>Stop the Canyon Crisis</h1>
-    </div>
-  </section>
+   <!-- FORM -->
+<section id="form">
+   <div class="container form" id="formid">
 
-  <!-- BACKSTORY/ABOUT -->
-  <section id="about">
-    <div class="card">
-      <h1>Free Willard Canyon</h1>
-      <p>
-        Access to Willard Canyon has become blocked by Granite Construction, 
-        owner's of the gravel pit at the mouth of the canyon. 
-      </p>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="exampleFormControlInput0" placeholder="John">
     </div>
-  </section>
-    
-  <section id="what">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col">
-          <h2>What does that mean for Willard Citizens?</h2>
-        </div>        
-      </div>
-      <div class="row">
-        <div class="col">
-          <p>
-            No more hiking trails. <br>
-            No more mountain access. <br>
-          </p>
-        </div>
-        <div class="col">
-          <p>
-            More dust from mining. <br>
-            More semi trucks. <br>
-          </p>
-        </div>
-      </div>
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="exampleFormControlInput0" placeholder="Smith">
     </div>
-  </section>
 
-  <!-- PETITION -->
-  <section id="petition">
-    <div class="card overflowAuto">
-      <img src="./images/fence.jpg" class="card-img" alt="">
-      <div class="card-img-overlay">
-        <div class="pettext">
-          <h1 class="card-title">End the Gravel Pit Invasion</h1>
-          <p class="card-text">Sign the Petition and Receive a <b>FREE Yard Sign</b></p>
-        </div>
-        <a href="actnow.html" class="btn" role="button">Act Now</a>
-      </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
-  </section>
 
-  <!-- CONTACT CITY/COUNCIL MEMBERS -->
-  <section id="contact">
-    <div class="card">
-      <h1>Reach Out</h1>
+    <p>If you'd like a sign and live in Willard enter your Street Address.</p>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Street Address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="123 Sesame Street">
+    </div>
 
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            <p>
-              Contact the city and council members to let them know you oppose the lease of Willard Canyon and the perpetual expansion of the gravel pit. </p>
-          </div>        
+  </div>
+
+  <!-- FORM BUTTON MODAL -->
+  <div class="modalbutton">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">SUBMIT</button>
+  </div>
+
+  <!-- FORM CONFIRMATION MODAL -->  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Submission sucessful!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-4">
-            <a href="https://www.willardcity.com/contact.html" class="btn" role="button">Contact Willard City</a>
-          </div>
-          <div class="col-4">
-            
-            <a href="https://www.willardcity.com/city-council.html" class="btn" role="button">Contact Council Members</a>
-          </div>
+        <div class="modal-body">
+            <p>Thank you for submitting! <br> If you submitted with an address we'll get back to you for your free sign. </p>
+        </div>
+        <div class="modal-footer">
+          <a href="index.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Return to Home</button></a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer>

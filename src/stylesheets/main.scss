@@ -2,6 +2,11 @@
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
+/***** FONT STYLES *****/
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
 /***** NAVIGATION BAR STYLES *****/
 nav{
     background-color: #9db3b4; //#749595;//rgb(255,238,220);// rgb(158,194,176) rgb(255,238,220)
@@ -16,13 +21,14 @@ nav{
 
 #actBtn > a{
     background-color: #2a5d5d;
-    color: #9db3b4;
+    color: white;
     font-size: 1.5rem;
     border-radius: 1rem;
 }
 
 #actBtn > a:hover{
-   color: white;
+   color: #9db3b4;
+   box-shadow: 0px 2px 5px black;
 }
 
 nav li{
@@ -43,7 +49,7 @@ nav li:last-child {
 }
 
 .navbar-brand > img:hover{
-    opacity: 80%;
+    opacity: 70%;
 }
 
 .navbar-nav{
@@ -92,10 +98,42 @@ nav li:last-child {
     box-shadow: 0px 2px 5px #777;
 }
 
+#about > .card > p{
+    font-size: 1.3rem;
+    width: 45%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/***** WHAT STYLES *****/
+#what > .container > .row > .col > h2{
+    margin-top: 20px;
+}
+
+#what > .container > .container > .row > .col > .card{
+    background-color: rgb(255,238,220);
+    box-shadow: 0px 2px 5px #777;
+    width: 16rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#what > .container > .container > .row > .col > .card > .card-body{
+    background-image: linear-gradient(rgb(255,238,220) 15%, #9db4b4 100%); 
+
+}
+
 /***** PETITION (HOME) STYLES *****/
 #petition > .card{
-    width: 55%; //Do 100% for phone
+    width: 55%;
     margin: 0 auto;
+    border: solid #2a5d5d 10px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
 }
 #petition > .card > .card-img-overlay > .pettext{
     //blurred background
@@ -104,10 +142,17 @@ nav li:last-child {
 }
 
 #petition > .card > .card-img-overlay > a{
+    font-size: 1.5rem;
+    width: 50%;
     background-color: #2a5d5d;
-    color: #9db3b4;
+    color: white;
     border-radius: 1rem;
     margin: 10px;
+}
+
+#petition > .card > .card-img-overlay > a:hover{
+    color: #9db3b4;
+    box-shadow: 0px 2px 5px black;
 }
 
 /***** CONTACT STYLES *****/
@@ -115,26 +160,41 @@ nav li:last-child {
     background-image: linear-gradient(#9db3b4 15%, rgb(255,238,220)  100%); // rgb(158,194,176) rgb(255,238,220)
     box-shadow: 0px 2px 5px #777;
     padding: 20px;
-    margin-top: 10px;
+    margin-top: 30px; 
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contact > .card .container > .row > .col > p{
+    font-size: 1.3rem;
+    width: 65%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #contact > .card > .container > .row > .col-4{
     background-color: #2a5d5d;
-    color: #9db3b4;
     font-size: 1.5rem;
     border-radius: 1rem;
-    width: 20%;
     margin: 2%;
+}
 
+#contact > .card > .container > .row > .col-4:hover{
+    box-shadow: 0px 2px 5px black;
 }
 
 #contact > .card > .container > .row > .col-4 > a{
-    color: #9db3b4;
+    color: white;
+    font-size: 1.3rem;
 }
 
 
 #contact > .card > .container > .row > .col-4 > a:hover{
-    color: white;
+    color: #9db3b4;
 }
 
 /** FOOTER STYLES **/
@@ -143,19 +203,31 @@ footer{
     padding: 15px;
 }
 
-footer > .container > .row > #footImg{
+.footer-brand > img{
     background-color: rgba(255, 255, 255, 0.30); 
     backdrop-filter: blur(10px); 
     border-radius: 2rem;
 }
 
-footer > .container > .row > #footImg:hover{
-    opacity: 80%;
+.footer-brand:hover{
+    opacity: 70%;
 }
 
-footer > .container > .row > .col > ul{
+footer > .container > .row > .col > p{
+    font-size: 1.2rem;
+}
+
+footer > .container > .row > .col > .container > .row > .col > ul{
     list-style-type: none;
     text-align: center;
+}
+
+footer > .container > .row > .col > .container > .row > .col > ul > li > a{
+    color: white !important;
+}
+
+footer > .container > .row > .col > .container > .row > .col > ul > li > a:hover{
+    color: #2a5d5d !important;
 }
 
 /***** NEWS PAGE *****/
@@ -172,40 +244,75 @@ footer > .container > .row > .col > ul{
 
 #news > .container > .row > .col{
     background-color: #9db3b4;
-    margin: 10px;
+    margin: 20px;
+    box-shadow: 0px 2px 5px #777;
+}
+
+#news > .container > .row{
+    margin: 20px;
 }
 
 #news > .container > .row > .col > a{
     background-color: #2a5d5d;
-    color: #9db3b4;
+    color: white;
     border-radius: 1rem;
 } 
 
 #news > .container > .row > .col > a:hover{
-    color: white;
+    color: #9db3b4;
+    box-shadow: 0px 2px 5px black;
+}
+
+#newscallback{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 /***** ACT NOW PAGE *****/
-#actnow > h1, #actnow > .join > h2{
+#actnow > h1, #actnow > .container > .row > .col-sm-6 > .join > h2{
     text-align: center;
 }
 
-#actnow > h1, #actnow > .join{
+#actnow > .image > img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+#actnow > h1, #actnow > .container > .row > .col-sm-6 > .join{
     background-image: linear-gradient(#9db4b4 15%, rgb(255,238,220)  100%); // rgb(158,194,176) rgb(255,238,220)
     box-shadow: 0px 2px 5px #777;
     padding: 10px;
     text-align: center;
 }
 
-#actnow > p, #actnow > .join > p{
-    padding: 10px;
+#actnow > .container > .row > .col{
+   margin-bottom: 30px;
+   margin-top: 30px;
 }
 
-#actnow > .join > a{
+#actnow > .container > .row > .col-sm-6 > .join {
+  margin-bottom: 30px;
+}
+
+#actnow > .container > .row > .col > p, #actnow > .container > .row > .col-sm-6 > .join > p{
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+#actnow > .container > .row > .col-sm-6 > .join > a{
     background-color: #2a5d5d;
-    color: #9db3b4;
+    color: white;
     font-size: 1.5rem;
     border-radius: 1rem;
+    width: 50%;
+}
+
+#actnow > .container > .row > .col-sm-6 > .join > a:hover{
+    color: #9db3b4;
+    box-shadow: 0px 2px 5px black;
 }
 
 
@@ -213,18 +320,28 @@ footer > .container > .row > .col > ul{
 #form > #formid{
     padding: 5px;
     background-color: #9db3b4;
-    margin: 10px;
+    margin-top: 40px; 
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+#form > .container > .mb-3 > label{
+    font-weight: bold;
 }
 
 #form > .modalbutton > button{   
     background-color: #2a5d5d;
-    color: #9db3b4;
+    color: white;
     font-size: 1.5rem;
     border-radius: 1rem;
+    margin-bottom: 30px;
 }
 
 #form > .modalbutton > button:hover{   
-    color: white;
+    color: #9db3b4;
+    box-shadow: 0px 2px 5px black;
 }
 
 #form > .modalbutton{
@@ -233,11 +350,17 @@ footer > .container > .row > .col > ul{
 }
 
 /***** COMMUNITY PAGE STORY SLIDESHOW *****/
+.storyslide > .carousel > .carousel-inner > .carousel-item > img{
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .storyslide > .carousel > .carousel-inner > .carousel-item > .carousel-caption > p{
     font-size: 1.5em;
     font-weight: 600;
-    background-color: rgba(255, 255, 255, 0.30); 
-    backdrop-filter: blur(10px); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(20px); 
     border-radius: .5rem;
     margin-right: 10px;
     margin-left: 10px;
@@ -260,7 +383,7 @@ footer > .container > .row > .col > ul{
 }
 
 /***** COMMUNITY PAGE STORY CALLBACK *****/
-#callback{
+#callback, #newscallback{
     background-image: linear-gradient(#9db4b4 15%, rgb(255,238,220)  100%); // rgb(158,194,176) rgb(255,238,220)
     box-shadow: 0px 2px 5px #777;
     padding: 10px;
@@ -269,17 +392,22 @@ footer > .container > .row > .col > ul{
 #callback, #story{
     text-align: center;
     margin: 10px;
+    margin-top: 30px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#callback > a{
+#callback > a, #newscallback > .call > a{
     background-color: #2a5d5d;
-    color: #9db3b4;
+    color: white;
     font-size: 1.5rem;
     border-radius: 1rem;
 }
 
-#callback > a:hover{
-   color: white;
+#callback > a:hover, #newscallback > .call > a:hover{
+   color: #9db3b4;
+   box-shadow: 0px 2px 5px black;
 }
 
 /***** COMMUNITY PAGE GALLERY STYLES *****/
@@ -288,5 +416,11 @@ footer > .container > .row > .col > ul{
 }
 
 #gallery > .container{
-    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: solid #2a5d5d 8px;
+    border-radius: 10px;
+    padding: 20px;
 }

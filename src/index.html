@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>WEB 2890 - Project 2</title>
+  <title>Save Willard Canyon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
   <meta name="description" content="TODO: Project 2 ...">
@@ -12,16 +12,195 @@
 </head>
 
 <body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/logo.png" height="auto" class="img-fluid" alt="logo horizontal" />
+        </a>
+
+        <!-- collapsible for smaller screens (hamburger menu)-->
+        <button class="navbar-toggler custom-toggler-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bi bi-list"></span>
+        </button>
+
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="actnow.html">Act Now</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="community.html">Community</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- JUMBOTRON -->
+  <section id="jumbo">
+    <div id="jumbo" class="jumbotron">
+      <h1>Stop the Canyon Crisis</h1>
+    </div>
+  </section>
+
+  <!-- BACKSTORY/ABOUT -->
+  <section id="about">
+    <div class="card">
+      <h1>Free Willard Canyon</h1>
+      <p>
+        Access to Willard Canyon has become blocked by Granite Construction, 
+        owner's of the gravel pit at the mouth of the canyon. 
+      </p>
+    </div>
+  </section>
     
-    Project 2: A multiple-page project of your choosing.
-  </h1>
+  <section id="what">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <h2>What does that mean for Willard Citizens?</h2>
+        </div>        
+      </div>
+
+      <div class="container text-center">
+        
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img src="./images/adventurer.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><b>No More</b> Hiking Trails</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="./images/mountain.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><b>No More</b> Mountain Access</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="./images/worker.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><b>More</b> Dust from Mining</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="./images/smog.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><b>More</b> Loud Gravel Trucks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PETITION -->
+  <section id="petition">
+    <div class="card overflowAuto">
+      <img src="./images/fence.jpg" class="card-img" alt="">
+      <div class="card-img-overlay">
+        <div class="pettext">
+          <h1 class="card-title">End the Gravel Pit Invasion</h1>
+          <p class="card-text">Sign the Petition and Receive a <b>FREE Yard Sign</b></p>
+        </div>
+        <a href="actnow.html" class="btn" role="button">Act Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CITY/COUNCIL MEMBERS -->
+  <section id="contact">
+    <div class="card">
+      <h1>Reach Out</h1>
+
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <p>
+              Contact the city and council members to let them know you oppose the lease of Willard Canyon and the perpetual expansion of the gravel pit. </p>
+          </div>        
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <a href="https://www.willardcity.com/contact.html" class="btn" role="button">Contact Willard City</a>
+          </div>
+          <div class="col-4">
+            <a href="https://www.willardcity.com/city-council.html" class="btn" role="button">Contact Council Members</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col" id="footImg">
+
+        <!-- logo -->
+        <a class="footer-brand" href="index.html">
+          <img src="./images/logo.png" height="auto" class="img-fluid" alt="logo horizontal" />
+        </a>
+
+        </div>
+        <div class="col" id="actBtn">
+          <a href="actnow.html" class="btn" role="button">Act Now</a>
+        </div>
+        <div class="col">
+          <p>
+            <strong>Quick Links</strong>
+          </p>
+
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="actnow.html">Act Now</a></li>
+                </ul>
+              </div>
+
+              <div class="col">
+                <ul>
+                  <li><a href="news.html">News</a></li>
+                  <li><a href="community.html">Community</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script type="module" src="./javascripts/main.js"></script>
 </body>
